@@ -30,6 +30,7 @@ Las tres técnicas presentadas son:
 Archivo principal: `acciones_limpio.csv`
 
 Columnas principales:
+
 | Columna | Descripción |
 |----------|--------------|
 | Date     | Fecha de registro |
