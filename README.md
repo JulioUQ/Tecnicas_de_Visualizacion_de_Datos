@@ -1,4 +1,4 @@
-# Técnicas de Visualización de Datos – PEC 2
+# Técnicas de Visualización de Datos 
 
 Este proyecto forma parte del Máster en **Ciencia de Datos** y presenta tres técnicas de visualización aplicadas a datos financieros de **Apple (AAPL)**, **Microsoft (MSFT)** y **Google (GOOG)**, extraídos del archivo `acciones_limpio.csv`.
 
