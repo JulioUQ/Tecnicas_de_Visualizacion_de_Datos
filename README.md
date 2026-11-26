@@ -1,10 +1,25 @@
-# Técnicas de Visualización de Datos 
+# Visualización · Exploración de datos financieros
+
+Proyecto académico que compara formas de presentar datos bursátiles mediante gráficos interactivos, incluidas velas y envolventes convexas.
+
+[![Sitio en vivo](https://img.shields.io/badge/Sitio_en_vivo-0369A1?style=flat)](https://juliouq.github.io/Tecnicas_de_Visualizacion_de_Datos/) · [Galería en GitHub Pages](https://juliouq.github.io/Tecnicas_de_Visualizacion_de_Datos/)
+
+## Tecnologías
+
+Python y Plotly
+
+## Explorar el repositorio
+
+- [`Visualizaciones`](./Visualizaciones)
+- [`notebooks`](./notebooks)
+
+## Documentación
 
 Este proyecto forma parte del Máster en **Ciencia de Datos** y presenta tres técnicas de visualización aplicadas a datos financieros de **Apple (AAPL)**, **Microsoft (MSFT)** y **Google (GOOG)**, extraídos del archivo `acciones_limpio.csv`.
 
 Autor: **Julio Úbeda Quesada**
 
-## Descripción general
+#### Descripción general
 
 El objetivo del proyecto es ilustrar distintos enfoques de **visualización de datos financieros**, combinando perspectivas de proporción, evolución temporal y análisis geométrico.
 
@@ -25,7 +40,7 @@ Las tres técnicas presentadas son:
    - Permite analizar **dispersión y estabilidad** de precios entre empresas.  
    - Tecnología usada: `scipy.spatial.ConvexHull` y `Plotly`.
 
-## Estructura de los datos
+#### Estructura de los datos
 
 Archivo principal: `acciones_limpio.csv`
 
