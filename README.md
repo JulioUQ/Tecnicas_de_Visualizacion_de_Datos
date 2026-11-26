@@ -1,42 +1,62 @@
-# Técnicas de Visualización de Datos 
+<div align="center">
 
-Este proyecto forma parte del Máster en **Ciencia de Datos** y presenta tres técnicas de visualización aplicadas a datos financieros de **Apple (AAPL)**, **Microsoft (MSFT)** y **Google (GOOG)**, extraídos del archivo `acciones_limpio.csv`.
+![Visualización](https://img.shields.io/badge/VISUALIZACI%C3%93N-00838F?style=for-the-badge)
 
-Autor: **Julio Úbeda Quesada**
+# Técnicas de visualización de datos financieros
+
+Tres técnicas de visualización aplicadas a cotizaciones de Apple, Microsoft y Google, publicadas como página web interactiva.
+
+[![Web en vivo: Ver visualizaciones](https://img.shields.io/badge/WEB_EN_VIVO-Ver_visualizaciones-2EA043?style=for-the-badge&logo=googlechrome&logoColor=white)](https://juliouq.github.io/Tecnicas_de_Visualizacion_de_Datos/)
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white) ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+
+<img src="docs/captura-web.png" alt="Página publicada con el gráfico de sectores del volumen medio negociado por empresa" width="100%" />
+
+</div>
+
+---
 
 ## Descripción general
 
-El objetivo del proyecto es ilustrar distintos enfoques de **visualización de datos financieros**, combinando perspectivas de proporción, evolución temporal y análisis geométrico.
+Ilustra tres enfoques distintos sobre los mismos datos bursátiles (AAPL, MSFT y GOOG): proporciones, evolución temporal y dispersión geométrica.
 
-Las tres técnicas presentadas son:
+## Funcionalidades
 
-1. **Pie Chart (Gráfico de pastel)**  
-   - Representa proporciones relativas entre categorías.  
-   - En este caso, muestra el **volumen medio de negociación** por empresa.  
-   - Tecnología usada: `Plotly`.
+- **Gráfico de sectores:** volumen medio negociado por empresa.
+- **Velas japonesas:** evolución de los precios de apertura, máximo, mínimo y cierre, con tendencias y volatilidad.
+- **Envolvente convexa:** polígono mínimo que contiene los puntos de cada empresa, para comparar dispersión y estabilidad.
 
-2. **Candlestick Chart (Gráfico de velas japonesas)**  
-   - Visualiza la **evolución temporal de precios (OHLC)**.  
-   - Permite observar tendencias, volatilidad y fases de consolidación.  
-   - Tecnología usada: `Plotly Graph Objects`.
+## Tecnologías y herramientas
 
-3. **Convex Hull (Envolvente convexa)**  
-   - Representa el **polígono convexo mínimo** que contiene un conjunto de puntos.  
-   - Permite analizar **dispersión y estabilidad** de precios entre empresas.  
-   - Tecnología usada: `scipy.spatial.ConvexHull` y `Plotly`.
+| Ámbito | Herramientas |
+| --- | --- |
+| Gráficos | Plotly, Plotly Graph Objects |
+| Geometría | SciPy (`ConvexHull`) |
+| Datos | pandas |
 
-## Estructura de los datos
+## Estructura del proyecto
 
-Archivo principal: `acciones_limpio.csv`
+```text
+.
+├── index.html            # Página publicada en GitHub Pages
+├── Visualizaciones.py    # Genera los tres gráficos
+├── Visualizaciones/      # Gráficos exportados en HTML
+├── notebooks/            # Desarrollo en Jupyter
+├── Data/                 # acciones_limpio.csv
+└── Presentacion/         # Diapositivas y vídeo
+```
 
-Columnas principales:
+## Instalación y uso
 
-| Columna | Descripción |
-|----------|--------------|
-| Date     | Fecha de registro |
-| Ticker   | Código bursátil (AAPL, MSFT, GOOG) |
-| Open     | Precio de apertura |
-| High     | Precio máximo |
-| Low      | Precio mínimo |
-| Close    | Precio de cierre |
-| Volume   | Volumen negociado |
+```bash
+pip install pandas plotly scipy
+python Visualizaciones.py
+```
+
+## Autor
+
+**Julio Úbeda Quesada** · Data Scientist
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-0B2545?style=flat-square&logo=astro&logoColor=white)](https://juliouq.github.io/Portfolio-Web---JulioUQ/es/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square)](https://www.linkedin.com/in/juliouq/) [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/JulioUQ)
+
+<sub>Proyecto realizado en el Máster Universitario en Ciencia de Datos.</sub>
